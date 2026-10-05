@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "postgresql+psycopg://postgres:alexia@localhost:5432/alexialibrary"
+    "postgresql+psycopg://postgres:YOUR_PASSWORD@localhost:5432/alexialibrary"
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
