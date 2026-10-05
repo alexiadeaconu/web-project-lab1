@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexia's Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Alexia's Library</h2>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#search">Books</a>
+        <a href="#saved">Saved</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="title">
+    <h1>Discover and save books.</h1>
+    <p>
+        A responsive web application.
+    </p>
+</section>
+
+<section id="profile">
+    <h2>My Profile</h2>
+
+    <p><b>Name:</b>Ioana-Alexia Deaconu</p>
+    <p><b>Email:</b>dioanaalexia@yahoo.com</p>
+    <p><b>Phone:</b>+40 766 300 219</p>
+
+    <h3>Skills</h3>
+
+    <div id="skills">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>PostgreSQL</span>
+        <span>JavaScript</span>
+    </div>
+
+    <form id="skill-form">
+        <input id="skill" placeholder="Add a skill">
+        <button>Add</button>
+        <p id="skill-error"></p>
+    </form>
+</section>
+
+<section id="search">
+    <h2>Search Books</h2>
+
+    <form id="search-form">
+        <input id="title" placeholder="Book title">
+        <button>Search</button>
+    </form>
+
+    <p id="loading"></p>
+    <p id="error"></p>
+
+    <div id="results"></div>
+</section>
+
+<section id="saved">
+    <h2>Saved Books</h2>
+    <div id="saved-books"></div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
